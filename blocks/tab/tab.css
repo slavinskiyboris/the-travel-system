@@ -1,0 +1,20 @@
+.tab-nav {
+    display: flex;
+    height: 100%;
+}
+
+.tab {
+    padding: 0 20px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.tab_active {
+    color: #2196F3;
+    border-bottom: 2px solid #2196F3;
+} 

@@ -1,0 +1,122 @@
+.trips {
+    margin-bottom: 14px;
+}
+
+.trips__header {
+    display: flex;
+    justify-content: flex-start;
+    gap: 24px;
+    align-items: center;
+    margin-block-end: 14px;
+    flex-wrap: wrap;
+}
+
+.trips__title {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.trips-table {
+    max-height: 768px;
+    overflow-y: auto;
+    overflow-x: auto;
+    width: 100%;
+    position: relative;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background-color: #F5F5F5;
+}
+
+.trips-table::-webkit-scrollbar {
+    width: 8px;
+}
+
+.trips-table::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.trips-table::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+.trips-table::-webkit-scrollbar-thumb:hover {
+    background: #aaa;
+}
+
+.trips-table__group {
+    margin-bottom: 0;
+    min-width: 800px;
+    max-width: 1380px;
+    border-radius: 6px;
+}
+
+.trips-table__group:hover {
+    border: 1px solid #2196F3;
+}
+
+.trips-table__group:not(:last-child) .trips-table__row:last-child {
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.trips-table__row {
+    display: flex;
+    padding: 12px 15px;
+    position: relative;
+    gap: 8px;
+    background-color: #fff;
+    border-radius: 4px;
+}
+
+.trips-table__header {
+    display: flex;
+    color: #666;
+    font-weight: 500;
+    gap: 8px;
+    background: none;
+    border: none;
+    background-color: #fff;
+}
+
+.trips-table__cell {
+    padding: 0 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.trips-table__cell_id {
+    flex: 0.5;
+    min-width: 60px;
+}
+
+.trips-table__cell_id-link {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.trips-table__cell_date {
+    flex: 1.2;
+    min-width: 120px;
+}
+
+.trips-table__cell_amount {
+    flex: 0.8;
+    min-width: 100px;
+    text-align: right;
+}
+
+.trips-table__cell_city {
+    flex: 2;
+    min-width: 200px;
+}
+
+.trips-table__cell_status {
+    flex: 0.8;
+    min-width: 120px;
+    text-align: right;
+} 

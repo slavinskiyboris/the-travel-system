@@ -1,0 +1,23 @@
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.user-info__name {
+    color: #2196F3;
+    font-weight: 500;
+}
+
+.user-info__logout-btn {
+    background: none;
+    border: none;
+    color: #2196F3;
+    font-size: 18px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.user-info__logout-btn:hover {
+    color: gray;
+} 

@@ -1,0 +1,13 @@
+/*STYLES*/
+@import url(../styles/globals.css);
+/*BLOCKS*/
+@import url(../blocks/header/header.css);
+@import url(../blocks/tab/tab.css);
+@import url(../blocks/user-info/user-info.css);
+@import url(../blocks/filter-panel/filter-panel.css);
+@import url(../blocks/date-range/date-range.css);
+@import url(../blocks/trips-table/trips-table.css);
+@import url(../blocks/tooltip/tooltip.css);
+@import url(../blocks/modal/modal.css);
+@import url(../blocks/form/form.css);
+@import url(../blocks/button/button.css);

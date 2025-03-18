@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <!--
+  github: https://github.com/slavinskiyboris
+  HH: https://spb.hh.ru/resume/a5ab30cfff097f295a0039ed1f6d6c686f744e
+  linkedin: https://www.linkedin.com/in/slavinskiyboris
+  -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Система поездок</title>
+    <link rel="stylesheet" href="pages/index.css">
+    <script src="scripts/script.js"></script>
+  </head>
+
+  <body class="page">
+    <header class="header">
+      <div class="header__content">
+        <div class="tab-nav">
+          <div class="tab tab_active">Поездки</div>
+        </div>
+        <div class="user-info">
+          <span class="user-info__name">Заболоцкий К.О</span>
+          <button class="user-info__logout-btn">→</button>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="container">
+        <div class="trips__header">
+          <h2 class="trips__title">Мои поездки</h2>
+          <button class="button button_type_add">+ Оформить поездку</button>
+        </div>
+        
+        <div class="filter-panel">
+          <div class="date-range">
+            <div class="date-range__field">
+              <label>Период с:</label>
+              <div class="date-range__input-container">
+                <input type="date" class="date-range__input" />
+                <button class="date-range__clear-button">×</button>
+              </div>
+            </div>
+            <div class="date-range__field">
+              <label>по:</label>
+              <div class="date-range__input-container">
+                <input type="date" class="date-range__input" />
+              </div>
+            </div>
+          </div>
+          
+          <div class="filter-panel__search">
+            <input type="text" placeholder="Поиск..." class="filter-panel__search-input" />
+            <button class="filter-panel__search-button">🔍</button>
+          </div>
+          
+          <button class="button button_type_reset reset-btn">× Сбросить все</button>
+          
+          <div class="filter-panel__archive">
+            <input type="checkbox" id="archive-toggle" class="filter-panel__archive-checkbox" />
+            <label for="archive-toggle">Показать архивные поездки</label>
+          </div>
+        </div>
+        
+        <div class="trips-table">
+          <!-- Группы поездок -->
+          <div class="trips-table__group">
+            <div class="trips-table__row trips-table__header">
+              <div class="trips-table__cell trips-table__cell_id">№ поездки</div>
+              <div class="trips-table__cell trips-table__cell_date">Дата поездки</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, план</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, факт</div>
+              <div class="trips-table__cell trips-table__cell_city">Город</div>
+              <div class="trips-table__cell trips-table__cell_status">Статус</div>
+            </div>
+            
+            <div class="trips-table__row">
+              <div class="trips-table__cell trips-table__cell_id"><a href="#" class="trips-table__cell_id-link">000115</a></div>
+              <div class="trips-table__cell trips-table__cell_date">22.02.2024 - 27.02.2024</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_city">Москва, Ярославль, Ижевск, Владимир</div>
+              <div class="trips-table__cell trips-table__cell_status"><button class="button button_type_docs">Документы</button></div>
+            </div>
+          </div>
+          
+          <div class="trips-table__group">
+            <div class="trips-table__row trips-table__header">
+              <div class="trips-table__cell trips-table__cell_id">№ поездки</div>
+              <div class="trips-table__cell trips-table__cell_date">Дата поездки</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, план</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, факт</div>
+              <div class="trips-table__cell trips-table__cell_city">Город</div>
+              <div class="trips-table__cell trips-table__cell_status">Статус</div>
+            </div>
+            
+            <div class="trips-table__row">
+              <div class="trips-table__cell trips-table__cell_id"><a href="#" class="trips-table__cell_id-link">000117</a></div>
+              <div class="trips-table__cell trips-table__cell_date">22.02.2024 - 27.02.2024</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_city">Москва</div>
+              <div class="trips-table__cell trips-table__cell_status"><button class="button button_type_docs">Документы</button></div>
+            </div>
+          </div>
+          
+          <div class="trips-table__group">
+            <div class="trips-table__row trips-table__header">
+              <div class="trips-table__cell trips-table__cell_id">№ поездки</div>
+              <div class="trips-table__cell trips-table__cell_date">Дата поездки</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, план</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, факт</div>
+              <div class="trips-table__cell trips-table__cell_city">Город</div>
+              <div class="trips-table__cell trips-table__cell_status">Статус</div>
+            </div>
+            
+            <div class="trips-table__row">
+              <div class="trips-table__cell trips-table__cell_id"><a href="#" class="trips-table__cell_id-link">000074</a></div>
+              <div class="trips-table__cell trips-table__cell_date">22.02.2024 - 27.02.2024</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_city">
+                Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск, Волго...
+              </div>
+              <div class="tooltip-container">
+                <span class="tooltip__icon">i</span>
+                <div class="tooltip">
+                  Кременчуг-Константиновское, Петропавловск-Камчатский, Новосибирск, Волгоград, Саратов
+                </div>
+              </div>
+              <div class="trips-table__cell trips-table__cell_status"><button class="button button_type_docs">Документы</button></div>
+            </div>
+          </div>
+          
+          <div class="trips-table__group">
+            <div class="trips-table__row trips-table__header">
+              <div class="trips-table__cell trips-table__cell_id">№ поездки</div>
+              <div class="trips-table__cell trips-table__cell_date">Дата поездки</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, план</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, факт</div>
+              <div class="trips-table__cell trips-table__cell_city">Город</div>
+              <div class="trips-table__cell trips-table__cell_status">Статус</div>
+            </div>
+            
+            <div class="trips-table__row">
+              <div class="trips-table__cell trips-table__cell_id"><a href="#" class="trips-table__cell_id-link">000115</a></div>
+              <div class="trips-table__cell trips-table__cell_date">22.02.2024 - 27.02.2024</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_city">Москва, Ярославль, Ижевск, Владимир</div>
+              <div class="trips-table__cell trips-table__cell_status"><button class="button button_type_docs">Документы</button></div>
+            </div>
+          </div>
+          
+          <div class="trips-table__group">
+            <div class="trips-table__row trips-table__header">
+              <div class="trips-table__cell trips-table__cell_id">№ поездки</div>
+              <div class="trips-table__cell trips-table__cell_date">Дата поездки</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, план</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, факт</div>
+              <div class="trips-table__cell trips-table__cell_city">Город</div>
+              <div class="trips-table__cell trips-table__cell_status">Статус</div>
+            </div>
+            
+            <div class="trips-table__row">
+              <div class="trips-table__cell trips-table__cell_id"><a href="#" class="trips-table__cell_id-link">000211</a></div>
+              <div class="trips-table__cell trips-table__cell_date">22.02.2024 - 27.02.2024</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_city">Москва, Ярославль, Ижевск, Владимир</div>
+              <div class="trips-table__cell trips-table__cell_status"><button class="button button_type_docs">Документы</button></div>
+            </div>
+          </div>
+          
+          <div class="trips-table__group">
+            <div class="trips-table__row trips-table__header">
+              <div class="trips-table__cell trips-table__cell_id">№ поездки</div>
+              <div class="trips-table__cell trips-table__cell_date">Дата поездки</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, план</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, факт</div>
+              <div class="trips-table__cell trips-table__cell_city">Город</div>
+              <div class="trips-table__cell trips-table__cell_status">Статус</div>
+            </div>
+            
+            <div class="trips-table__row">
+              <div class="trips-table__cell trips-table__cell_id"><a href="#" class="trips-table__cell_id-link">000118</a></div>
+              <div class="trips-table__cell trips-table__cell_date">22.02.2024 - 27.02.2024</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_city">Москва, Ярославль, Ижевск, Владимир</div>
+              <div class="trips-table__cell trips-table__cell_status"><button class="button button_type_docs">Документы</button></div>
+            </div>
+          </div>
+          
+          <div class="trips-table__group">
+            <div class="trips-table__row trips-table__header">
+              <div class="trips-table__cell trips-table__cell_id">№ поездки</div>
+              <div class="trips-table__cell trips-table__cell_date">Дата поездки</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, план</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, факт</div>
+              <div class="trips-table__cell trips-table__cell_city">Город</div>
+              <div class="trips-table__cell trips-table__cell_status">Статус</div>
+            </div>
+            
+            <div class="trips-table__row">
+              <div class="trips-table__cell trips-table__cell_id"><a href="#" class="trips-table__cell_id-link">000119</a></div>
+              <div class="trips-table__cell trips-table__cell_date">22.02.2024 - 27.02.2024</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_city">Москва, Ярославль, Ижевск, Владимир</div>
+              <div class="trips-table__cell trips-table__cell_status"><button class="button button_type_docs">Документы</button></div>
+            </div>
+          </div>
+          
+          <div class="trips-table__group">
+            <div class="trips-table__row trips-table__header">
+              <div class="trips-table__cell trips-table__cell_id">№ поездки</div>
+              <div class="trips-table__cell trips-table__cell_date">Дата поездки</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, план</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, факт</div>
+              <div class="trips-table__cell trips-table__cell_city">Город</div>
+              <div class="trips-table__cell trips-table__cell_status">Статус</div>
+            </div>
+            
+            <div class="trips-table__row">
+              <div class="trips-table__cell trips-table__cell_id"><a href="#" class="trips-table__cell_id-link">000120</a></div>
+              <div class="trips-table__cell trips-table__cell_date">22.02.2024 - 27.02.2024</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_city">Москва, Ярославль, Ижевск, Владимир</div>
+              <div class="trips-table__cell trips-table__cell_status"><button class="button button_type_docs">Документы</button></div>
+            </div>
+          </div>
+          
+          <div class="trips-table__group">
+            <div class="trips-table__row trips-table__header">
+              <div class="trips-table__cell trips-table__cell_id">№ поездки</div>
+              <div class="trips-table__cell trips-table__cell_date">Дата поездки</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, план</div>
+              <div class="trips-table__cell trips-table__cell_amount">Сумма, факт</div>
+              <div class="trips-table__cell trips-table__cell_city">Город</div>
+              <div class="trips-table__cell trips-table__cell_status">Статус</div>
+            </div>
+            
+            <div class="trips-table__row">
+              <div class="trips-table__cell trips-table__cell_id"><a href="#" class="trips-table__cell_id-link">000133</a></div>
+              <div class="trips-table__cell trips-table__cell_date">22.02.2024 - 27.02.2024</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_amount">29 400,00</div>
+              <div class="trips-table__cell trips-table__cell_city">Москва, Ярославль, Ижевск, Владимир</div>
+              <div class="trips-table__cell trips-table__cell_status"><button class="button button_type_docs">Документы</button></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+
+    </footer>
+
+    <!-- Обновим template для группы -->
+    <template id="trip-group-template">
+      <div class="trips-table__group">
+        <div class="trips-table__row trips-table__header">
+          <div class="trips-table__cell trips-table__cell_id">№ поездки</div>
+          <div class="trips-table__cell trips-table__cell_date">Дата поездки</div>
+          <div class="trips-table__cell trips-table__cell_amount">Сумма, план</div>
+          <div class="trips-table__cell trips-table__cell_amount">Сумма, факт</div>
+          <div class="trips-table__cell trips-table__cell_city">Город</div>
+          <div class="trips-table__cell trips-table__cell_status">Статус</div>
+        </div>
+        
+        <div class="trips-table__row">
+          <div class="trips-table__cell trips-table__cell_id"><a href="#" class="trips-table__cell_id-link trip-id"></a></div>
+          <div class="trips-table__cell trips-table__cell_date trip-date"></div>
+          <div class="trips-table__cell trips-table__cell_amount trip-plan"></div>
+          <div class="trips-table__cell trips-table__cell_amount trip-fact"></div>
+          <div class="trips-table__cell trips-table__cell_city trip-city"></div>
+          <div class="trips-table__cell trips-table__cell_status"><button class="button button_type_docs">Документы</button></div>
+        </div>
+      </div>
+    </template>
+
+    <!-- Модальное окно добавления поездки (изначально скрытое) -->
+    <div id="add-trip-modal" class="modal" style="display: none;">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h3 class="modal__title">Оформление новой поездки</h3>
+          <button class="modal__close-btn" id="close-modal-btn">×</button>
+        </div>
+        
+        <form id="add-trip-form" class="form">
+          <div class="form__field">
+            <label class="form__label" for="id">Номер поездки</label>
+            <input class="form__input" type="text" id="id" name="id" placeholder="Например: 000999" required>
+          </div>
+          
+          <div class="form__field">
+            <label class="form__label" for="startDate">Дата начала</label>
+            <input class="form__input" type="date" id="startDate" name="startDate" required>
+          </div>
+          
+          <div class="form__field">
+            <label class="form__label" for="endDate">Дата окончания</label>
+            <input class="form__input" type="date" id="endDate" name="endDate" required>
+          </div>
+          
+          <div class="form__field">
+            <label class="form__label" for="plan">Сумма (план)</label>
+            <input class="form__input" type="text" id="plan" name="plan" placeholder="Например: 29 400,00" required>
+          </div>
+          
+          <div class="form__field">
+            <label class="form__label" for="fact">Сумма (факт)</label>
+            <input class="form__input" type="text" id="fact" name="fact" placeholder="Например: 29 400,00" required>
+          </div>
+          
+          <div class="form__field">
+            <label class="form__label" for="city">Город(а)</label>
+            <input class="form__input" type="text" id="city" name="city" placeholder="Например: Москва, Ярославль" required>
+          </div>
+          
+          <div class="form__buttons">
+            <button type="button" class="button button_type_cancel" id="cancel-btn">Отмена</button>
+            <button type="submit" class="button button_type_submit">Добавить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+
+  </body>
+
+</html>

@@ -1,0 +1,67 @@
+.button {
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button_type_add {
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 8px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.button_type_add:hover {
+    background-color: #007bff;
+}
+
+.button_type_docs {
+    background-color: #f5f5f5;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 12px;
+    color: #666;
+}
+
+.button_type_docs:hover {
+    background-color: #e0e0e0;
+}
+
+.button_type_reset {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    color: #2196F3;
+    font-size: 14px;
+}
+
+.button_type_cancel {
+    padding: 8px 15px;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.button_type_cancel:hover {
+    background-color: #e0e0e0;
+}
+
+.button_type_submit {
+    padding: 8px 15px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.button_type_submit:hover {
+    background-color: #007bff;
+} 
